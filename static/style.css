@@ -1,0 +1,79 @@
+/* Quy tắc chung cho toàn trang */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+}
+
+/* Khung chứa nội dung chính */
+.container {
+  max-width: 1180px;
+  margin: auto;
+  padding: 24px;
+}
+
+/* Thẻ tổng hợp cho filter, card, kpis, article */
+.filter,
+.card,
+.kpis,
+article {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 10px #00000012;
+}
+
+/* Bố cục KPI dạng lưới 4 cột */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 16px 0;
+}
+
+.kpis b,
+.kpis span {
+  display: block;
+}
+
+.kpis b {
+  font-size: 1.7rem;
+  color: #1d4ed8;
+}
+
+/* Bố cục 2 cột chính */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* Định dạng bảng dữ liệu */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.table-wrap {
+  margin-top: 16px;
+  overflow-x: auto;
+}
+
+/* Responsive cho thiết bị di động (màn hình dưới 800px) */
+@media (max-width: 800px) {
+  .kpis,
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

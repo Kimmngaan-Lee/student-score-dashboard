@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pandas
+seaborn
+matplotlib
+plotly
+jinja2
+python-multipart
